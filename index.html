@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman Login dengan gambar background dan efek transparan">
+    <title>Login - Galeri Keren</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('bg10.jpg') no-repeat center center/cover; /* Ganti 'your-image.jpg' dengan URL gambar yang diinginkan */
+            background-attachment: fixed; /* Menjaga gambar latar tetap di tempat saat scroll */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Transparansi pada background */
+            border-radius: 15px;
+            padding: 40px 50px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            backdrop-filter: blur(10px); /* Efek blur pada background */
+        }
+
+        .login-container h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.1em;
+            outline: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        .input-field:focus {
+            border-color: #4CAF50;
+            background-color: #444;
+        }
+
+        .input-field::placeholder {
+            color: #bbb;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            text-decoration: none; /* Menghapus garis bawah pada tautan */
+            display: inline-block; /* Memastikan tombol bekerja sebagai tautan */
+            text-align: center; /* Mengatur posisi teks di tengah */
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .link {
+            color: #fff;
+            font-size: 1em;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: #4CAF50;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 500px) {
+            .login-container {
+                padding: 30px 20px;
+                width: 90%;
+            }
+
+            .login-container h1 {
+                font-size: 2em;
+            }
+
+            .input-field {
+                font-size: 1em;
+            }
+
+            .login-btn {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="#">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            
+            <!-- Tombol Masuk sebagai tautan (menggunakan href) -->
+            <a href="index2.html" class="login-btn">Masuk</a>
+        </form>
+    </div>
+
+</body>
+</html>

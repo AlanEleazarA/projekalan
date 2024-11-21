@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page yang keren dengan foto, judul dan desain modern.">
+    <title>Home - Galeri Keren</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: url('bg2.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 20px;
+            font-weight: 300;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            width: 100%;
+            padding: 40px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            background-color: #121212;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover img {
+            opacity: 0.7;
+        }
+
+        .gallery-item .title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .title {
+            opacity: 1;
+        }
+
+        .gallery-item .caption {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+            color: #bbb;
+            background-color: #333;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212;
+            color: #aaa;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header with Background Image -->
+<header>
+    <div>
+        <h1>Sejarah Megawati</h1>
+        <p>Mantan Presiden dan Wakil Presiden Indonesia</p>
+    </div>
+</header>
+
+<!-- Gallery Section -->
+<div class="gallery-container">
+    <!-- Foto 1 dengan link ke halaman lain -->
+    <a href="index3.html" class="gallery-item">
+        <img src="mg.jpg" alt="Foto 1">
+        <div class="title">Diah Permata Megawati Setiawati Soekarnoputri</div>
+        <div class="caption">Profil Diah Permata Megawati Setiawati Soekarnoputri.</div>
+    </a>
+    <!-- Foto 2 dengan link ke halaman lain -->
+    <a href="index4.html" class="gallery-item">
+        <img src="ham1.jpg" alt="Foto 2">
+        <div class="title">Hamzah Haz</div>
+        <div class="caption">Profil Hamzah Haz.</div>
+    </a>
+     <!-- Foto 3 dengan link ke halaman lain -->
+    <a href="index5.html" class="gallery-item">
+        <img src="gus.jpg" alt="Foto 2">
+        <div class="title">Kyai Haji Abdurrahman Wahid</div>
+        <div class="caption">Profil Kyai Haji Abdurrahman Wahid.</div>
+    </a>
+</div>
+</body>
+</html>
